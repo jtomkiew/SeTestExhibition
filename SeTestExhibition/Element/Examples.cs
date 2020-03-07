@@ -47,7 +47,7 @@ namespace SeTestExhibition.Element
             // * finalElement.Click() is invoked (no exception)
         }
 
-        public void Example3_StaleResistance_PartialRelaod()
+        public void Example3_StaleResistance_PartialReload()
         {
             // Assuming now part of the page is reloaded and elements mainElement and subElement are still available and the same but finalElement is has new reference (would throw as stale)...
 
@@ -64,7 +64,7 @@ namespace SeTestExhibition.Element
             // * finalElement.Click() is invoked (no exception)
         }
 
-        public void Example4_StaleResistance_FullRelaod()
+        public void Example4_StaleResistance_FullReload()
         {
             // Assuming now page is reloaded and all elements are still available but with new references (all would throw as stale)...
 

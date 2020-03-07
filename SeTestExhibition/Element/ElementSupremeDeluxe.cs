@@ -89,15 +89,15 @@ namespace SeTestExhibition.Element
             }
         }
 
-        private T SafeFunc<T>(Func<IWebElement, T> getter)
+        private T SafeFunc<T>(Func<IWebElement, T> func)
         {
             try
             {
-                return getter(Element);
+                return func(Element);
             }
             catch (StaleElementReferenceException)
             {
-                return getter(Element);
+                return func(Element);
             }
         }
 
